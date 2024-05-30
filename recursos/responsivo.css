@@ -1,5 +1,10 @@
-@media (max-width: 1120px){
-    header img{
-        width: 50px;
+@media (max-width: 1080px){
+    body{
+        background-color: #D3D3D3;
     }
+
+    #imghead{
+        width: 90px;
+    }
+
 }

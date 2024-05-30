@@ -1,0 +1,60 @@
+header{
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFE4E1;
+}
+header img{
+    padding: 5px;
+}
+
+header h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+#ftcris{
+    border-radius: 20%;
+}
+
+/* Main e carrosel */
+
+main img{
+    width: 90px;
+}
+
+.carrossel{
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrosel-imagens{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+
