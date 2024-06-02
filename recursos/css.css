@@ -1,11 +1,13 @@
+body{
+    margin: 0;
+    background-color: #D3D3D3;
+}
+
 header{
-    /* position: fixed; */
-    width: 100%;
-    top: 0;
-    left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    padding: 10px;
     background-color: #FFE4E1;
 }
 header img{
@@ -13,48 +15,51 @@ header img{
 }
 
 header h1{
-    font-size: 20px;
-    text-align: center;
+    margin-left: 20px;
+    font-size: 30px;
 }
 
-#ftcris{
-    border-radius: 20%;
-}
-
-/* Main e carrosel */
-
-main img{
-    width: 90px;
-}
-
-.carrossel{
+/* Carrossel */
+.carousel {
     position: relative;
-    max-width: 600px;
-    margin: auto;
+    width: 100%;
+    max-width: 800px;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.carrosel-imagens{
+.carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.prev, .next {
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(0,0,0,0.5);
     border: none;
+    color: white;
+    font-size: 30px;
     padding: 10px;
     cursor: pointer;
-    z-index: 10;
 }
+
 .prev {
-    left: 0;
+    left: 10px;
 }
+
 .next {
-    right: 0;
+    right: 10px;
 }
-
-
