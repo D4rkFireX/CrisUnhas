@@ -17,8 +17,8 @@ header img{
 }
 
 header h1{
-    margin-left: 695px;
-    font-size: 40px;
+    margin-left: 25px;
+    font-size: 30px;
 }
 
 main{
@@ -86,7 +86,7 @@ main div h1{
 
 .whats{
     position: fixed;
-    bottom: 40px;
-    right: 30px;
+    bottom: 30px;
+    right: 10px;
     z-index: 9999;
 }
