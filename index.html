@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="recursos/responsivo.css" />
     <link rel="stylesheet" href="recursos/css.css" />
@@ -11,93 +11,109 @@
     <header>
       <div>
         <img
-          src="recursos/img/podoft.png" alt="pé" id="imghead" width="100px"/>
+          src="recursos/img/podoft.png"
+          alt="pé"
+          id="imghead"
+          width="100px"
+        />
       </div>
+
       <h1>Cristiane Reis Podologia</h1>
     </header>
 
-
     <main>
-      <div class="intro">
-        <h1>Quem sou eu?</h1>
-        <img src="recursos/img/ftcris.jpg" alt="cris" id="ftcris" width="130px">
-      </div>
-      
-      <p>
-        Olá! Meu nome é Cristiane Reis. Sou podóloga há anos e sempre estou planejando
-        em investir no meu trabalho como profissional.
-      </p>
+      <div class="divintro">
+        <div id="divteste">
+          <h1>Quem sou eu?</h1>
+          <img
+            src="recursos/img/ftcris.jpg"
+            alt="cris"
+            id="ftcris"
+            width="300px"
+          />
+        </div>
 
+        <div id="divparagrafo">
+          <p>
+            Olá! Meu nome é Cristiane Reis. Sou podóloga há anos e sempre estou
+            planejando em investir no meu trabalho como profissional.
+          </p>
+        </div>
+      </div>
     </main>
 
-    <div class="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="recursos/img/fotocare1.jpg" alt="Imagem 1" />
+    <div id="divpaicarousel">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="recursos/img/pro1.jpg" alt="Imagem 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="recursos/img/pro2.jpg" alt="Imagem 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="recursos/img/fotocare3.jpg" alt="Imagem 3" />
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="recursos/img/fotocare2.jpg" alt="Imagem 2" />
-        </div>
-        <div class="carousel-item">
-          <img src="recursos/img/fotocare3.jpg" alt="Imagem 3" />
-        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">
+          &#10094;
+        </button>
+        <button class="carousel-control next" onclick="nextSlide()">
+          &#10095;
+        </button>
       </div>
-      <button class="carousel-control prev" onclick="prevSlide()">
-        &#10094;
-      </button>
-      <button class="carousel-control next" onclick="nextSlide()">
-        &#10095;
-      </button>
     </div>
     <script src="script.js"></script>
 
     <footer></footer>
+    
     <div class="whats">
       <a href="https://wa.me/5516988179964" target="_blank">
-      <img src="recursos/img/wa.png" alt="Fale comigo" width="70px">
-    </a>
+        <img src="recursos/img/wa.png" alt="Fale comigo" width="70px" />
+      </a>
     </div>
   </body>
 </html>
 
-
 <script>
   let currentIndex = 0;
-const intervalTime = 3000; // Tempo entre mudanças de slide em milissegundos
+  const intervalTime = 3000; // Tempo entre mudanças de slide em milissegundos
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-item');
+  function showSlide(index) {
+    const slides = document.querySelectorAll(".carousel-item");
     const totalSlides = slides.length;
-    
+
     if (index >= totalSlides) {
-        currentIndex = 0;
+      currentIndex = 0;
     } else if (index < 0) {
-        currentIndex = totalSlides - 1;
+      currentIndex = totalSlides - 1;
     } else {
-        currentIndex = index;
+      currentIndex = index;
     }
 
     const offset = -currentIndex * 100;
-    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
-}
+    document.querySelector(
+      ".carousel-inner"
+    ).style.transform = `translateX(${offset}%)`;
+  }
 
-function nextSlide() {
+  function nextSlide() {
     showSlide(currentIndex + 1);
-}
+  }
 
-function prevSlide() {
+  function prevSlide() {
     showSlide(currentIndex - 1);
-}
+  }
 
-// Função para iniciar a mudança automática de slides
-function startAutoSlide() {
+  // Função para iniciar a mudança automática de slides
+  function startAutoSlide() {
     setInterval(nextSlide, intervalTime);
-}
+  }
 
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener("DOMContentLoaded", () => {
     showSlide(currentIndex);
     startAutoSlide(); // Inicia a mudança automática de slides quando a página carrega
-});
+  });
 </script>
 
 <!-- <img src="recursos/img/ftcris.jpg" alt="ftcris" id="ftcris" width="120px"> -->
