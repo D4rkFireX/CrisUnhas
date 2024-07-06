@@ -1,0 +1,27 @@
+@media (max-width: 1080px){
+
+    .logo img{
+        width: 90px;
+    }
+
+    .textopag h1{
+        margin-left: 12px;
+        font-size: 25px;
+    }
+
+    .textopag img{
+        width: 140px;
+    }
+
+    .informacao{
+        width: 200px;
+    }
+
+    main{
+        align-items: center;
+    }
+
+.carousel-control {
+    font-size: 12px;
+}
+}

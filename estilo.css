@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    margin: 0;
+    /* background-color: #D3D3D3; */
+    background-color: rgb(249, 242, 242);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho da página */
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    background-color: #FFE4E1;
+}
+
+.logo{
+    margin-left: 10px;
+}
+
+.textopag{
+    display: flex;
+    align-items: center;
+    margin-right: 560px;
+}
+
+.fotocris{
+    margin-left: 40px;
+}
+
+main{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.informacao{
+    margin-top: 15px;
+    background-color: rgb(248, 246, 246);
+    width: 35%;
+    text-align: left;
+    font-size: large;
+    margin-right: 10px;
+}
+
+
+.carrossel{
+    width: 45%;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.whats{
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 9999;
+}
